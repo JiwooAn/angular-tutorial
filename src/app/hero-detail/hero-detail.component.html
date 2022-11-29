@@ -1,0 +1,11 @@
+<div *ngIf="hero">
+    <h2 class="center">{{ hero.name | uppercase}} Details</h2>
+    <div class="center padding-bottom-1"><span>id: </span>{{ hero.id }}</div>
+    <div class="center">
+        <label for="hero-name" class="label-center">Hero name: </label>
+        <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+    </div>
+</div>
+<div class="center">
+    <button type="button" (click)="goBack()">~뒤로 가기~</button>
+</div>
